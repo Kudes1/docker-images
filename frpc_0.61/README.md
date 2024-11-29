@@ -15,7 +15,8 @@
 `docker pull ghcr.io/kudes1/frpc_0.59:${ARCH}`
 
 ## Запуск
-Требуется пробросить файл конфигурации .toml в контейнер по пути `/etc/frpc/config.toml` (пример в docker-compose.yaml)
+По умолчанию ребуется пробросить файл конфигурации .toml в контейнер по пути `/etc/frpc/config.toml` (пример в docker-compose.yaml).
+`ENTRYPOINT` по умолчанию сама утилита, через `CMD` запускается файл `/etc/frpc/config.toml`, но никто не мешает переопределить это.
 
 ## Примеры docker-compose.yaml
 
