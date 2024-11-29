@@ -12,7 +12,7 @@
 + arm32
 
 ## Pull
-`docker pull ghcr.io/kudes1/frpc_0.59:${ARCH}`
+`docker pull ghcr.io/kudes1/frpc_0.61:${ARCH}`
 
 ## Запуск
 По умолчанию ребуется пробросить файл конфигурации .toml в контейнер по пути `/etc/frpc/config.toml` (пример в docker-compose.yaml).
